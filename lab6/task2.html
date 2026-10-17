@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - Task 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #333333;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1e293b;
+            text-align: center;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+
+        .outer-div {
+            background-color: #e2e8f0;
+            border: 2px solid #cbd5e1;
+            padding: 20px;
+            margin: 25px auto;
+        }
+
+        .middle-div {
+            background-color: #bfdbfe;
+            border: 2px solid #93c5fd;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .inner-div {
+            background-color: #fed7aa;
+            border: 2px solid #fdba74;
+            padding: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .answers-section {
+            margin-top: 40px;
+            border-top: 2px dashed #cbd5e1;
+            padding-top: 20px;
+        }
+
+        .answers-section h3 {
+            color: #1e293b;
+        }
+
+        .answers-section ul {
+            padding-left: 20px;
+        }
+
+        .answers-section li {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lab 6 - Task 2: Nested Divs & Margins</h1>
+
+        <div class="outer-div">
+            <h3>Outer Div Container</h3>
+            <div class="middle-div">
+                <h3>Middle Div Container</h3>
+                <div class="inner-div">
+                    <h3>Inner Div Container</h3>
+                    <p>This paragraph is inside the innermost nested div.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="answers-section">
+            <h3>Lab Assignment Questions & Answers</h3>
+            
+            <p><strong>Question:</strong> What is the effect of each margin value on the spacing between the elements?</p>
+            
+            <ul>
+                <li>
+                    <strong>Outer Div Margin (`margin: 25px auto`):</strong> 
+                    Applies a 25px gap vertically above and below the outer container, pushing it away from other page elements, and centers it horizontally (`auto`) within the browser window.
+                </li>
+                <li>
+                    <strong>Middle Div Margin (`margin-top: 20px; margin-bottom: 20px`):</strong> 
+                    Creates 20px of vertical space above and below the middle container. This pushes it away from the inner boundaries of the outer div, controlling vertical flow spacing.
+                </li>
+                <li>
+                    <strong>Inner Div Margin (`margin-left: 40px; margin-right: 40px`):</strong> 
+                    Applies a 40px gap on both the left and right sides. This indents the innermost container horizontally inward, creating an offset visual hierarchy relative to its parent container.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

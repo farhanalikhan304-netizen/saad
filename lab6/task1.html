@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - Task 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        #main-title {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            font-family: 'Georgia', serif;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 15px;
+            color: #4a5568;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .highlight-text {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .answers-section {
+            margin-top: 40px;
+            border-top: 2px dashed #cbd5e1;
+            padding-top: 20px;
+        }
+
+        .answers-section h3 {
+            color: #1e293b;
+        }
+
+        .answers-section ul {
+            padding-left: 20px;
+        }
+
+        .answers-section li {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main-title">Lab 6 - Task 1: Selectors Web Page</h1>
+
+        <p>This paragraph uses the global <strong>element selector</strong> (`p`). It defines a consistent font size, color, and line height across all paragraphs on the page.</p>
+
+        <div class="card">
+            <h2>Container Card Heading</h2>
+            <p>This section uses a <strong>class selector</strong> (`.card`) to apply a background color, border, and padding, creating a distinct UI component box.</p>
+            <p>We also have inline text featuring a <span class="highlight-text">class-based highlight style</span> to make specific text stand out.</p>
+        </div>
+
+        <div class="answers-section">
+            <h3>Lab Assignment Questions & Answers</h3>
+            
+            <p><strong>Question:</strong> What styles did you apply to each type of selector, and how do they affect the appearance of the elements?</p>
+            
+            <ul>
+                <li>
+                    <strong>Element Selector (`p`):</strong> 
+                    <em>Styles applied:</em> Font family, text color (`#4a5568`), and line height (`1.6`). 
+                    <em>Effect:</em> Sets a clean baseline readability globally across all standard paragraphs.
+                </li>
+                <li>
+                    <strong>Class Selector (`.card` & `.highlight-text`):</strong> 
+                    <em>Styles applied:</em> Background color (`#f8f9fa`), borders, padding, rounded corners, font-weight, and blue text color. 
+                    <em>Effect:</em> Groups content into a distinct visual component and highlights targeted phrases. Because it is a class, it can be reused across multiple elements.
+                </li>
+                <li>
+                    <strong>ID Selector (`#main-title`):</strong> 
+                    <em>Styles applied:</em> Centered alignment, primary title color (`#2c3e50`), a decorative bottom border accent, and a unique heading font (`Georgia`). 
+                    <em>Effect:</em> Targets a single unique landmark element on the page, giving it high visual prominence as the primary heading.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
